@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 
+// A esto se le conoce como custom HOOK ese hoook nos va a permitir hacer la llamada asincrona para consumir toda la informacion de la API  
 const useFetch = (url) => {
   const [fetchedData, setFetchedData] = useState({
     status: 'idle', // 1. sin informacion, 2, ok obtengo informacion? -> la obtengo o falla 3. output
